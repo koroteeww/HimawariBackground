@@ -186,7 +186,7 @@ namespace HimawariNoFormAutostart
                     }
                     catch (Exception e)
                     {
-                        MessageBox.Show(e.Message);
+						addToLog("SaveImage "+e.Message+e.StackTrace);MessageBox.Show(e.Message);
                     }
                 }
             }
